@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CD1ECC31A4320A00033B502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1ECC21A4320A00033B502 /* AppDelegate.swift */; };
+		0CD1ECC51A4320A00033B502 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD1ECC41A4320A00033B502 /* Images.xcassets */; };
+		0CD1ECC81A4320A00033B502 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD1ECC61A4320A00033B502 /* MainMenu.xib */; };
+		0CD1ECD41A4320A00033B502 /* GuanteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1ECD31A4320A00033B502 /* GuanteTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CD1ECCE1A4320A00033B502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CD1ECB51A4320A00033B502 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CD1ECBC1A4320A00033B502;
+			remoteInfo = Guante;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CD1ECBD1A4320A00033B502 /* Guante.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guante.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CD1ECC11A4320A00033B502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CD1ECC21A4320A00033B502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CD1ECC41A4320A00033B502 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0CD1ECC71A4320A00033B502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0CD1ECCD1A4320A00033B502 /* GuanteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuanteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CD1ECD21A4320A00033B502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CD1ECD31A4320A00033B502 /* GuanteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuanteTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CD1ECBA1A4320A00033B502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CD1ECCA1A4320A00033B502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CD1ECB41A4320A00033B502 = {
+			isa = PBXGroup;
+			children = (
+				0CD1ECBF1A4320A00033B502 /* Guante */,
+				0CD1ECD01A4320A00033B502 /* GuanteTests */,
+				0CD1ECBE1A4320A00033B502 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CD1ECBE1A4320A00033B502 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1ECBD1A4320A00033B502 /* Guante.app */,
+				0CD1ECCD1A4320A00033B502 /* GuanteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CD1ECBF1A4320A00033B502 /* Guante */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1ECC21A4320A00033B502 /* AppDelegate.swift */,
+				0CD1ECC41A4320A00033B502 /* Images.xcassets */,
+				0CD1ECC61A4320A00033B502 /* MainMenu.xib */,
+				0CD1ECC01A4320A00033B502 /* Supporting Files */,
+			);
+			path = Guante;
+			sourceTree = "<group>";
+		};
+		0CD1ECC01A4320A00033B502 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1ECC11A4320A00033B502 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0CD1ECD01A4320A00033B502 /* GuanteTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1ECD31A4320A00033B502 /* GuanteTests.swift */,
+				0CD1ECD11A4320A00033B502 /* Supporting Files */,
+			);
+			path = GuanteTests;
+			sourceTree = "<group>";
+		};
+		0CD1ECD11A4320A00033B502 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1ECD21A4320A00033B502 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CD1ECBC1A4320A00033B502 /* Guante */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CD1ECD71A4320A00033B502 /* Build configuration list for PBXNativeTarget "Guante" */;
+			buildPhases = (
+				0CD1ECB91A4320A00033B502 /* Sources */,
+				0CD1ECBA1A4320A00033B502 /* Frameworks */,
+				0CD1ECBB1A4320A00033B502 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Guante;
+			productName = Guante;
+			productReference = 0CD1ECBD1A4320A00033B502 /* Guante.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CD1ECCC1A4320A00033B502 /* GuanteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CD1ECDA1A4320A00033B502 /* Build configuration list for PBXNativeTarget "GuanteTests" */;
+			buildPhases = (
+				0CD1ECC91A4320A00033B502 /* Sources */,
+				0CD1ECCA1A4320A00033B502 /* Frameworks */,
+				0CD1ECCB1A4320A00033B502 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CD1ECCF1A4320A00033B502 /* PBXTargetDependency */,
+			);
+			name = GuanteTests;
+			productName = GuanteTests;
+			productReference = 0CD1ECCD1A4320A00033B502 /* GuanteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CD1ECB51A4320A00033B502 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Aurelian Oancea";
+				TargetAttributes = {
+					0CD1ECBC1A4320A00033B502 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					0CD1ECCC1A4320A00033B502 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 0CD1ECBC1A4320A00033B502;
+					};
+				};
+			};
+			buildConfigurationList = 0CD1ECB81A4320A00033B502 /* Build configuration list for PBXProject "Guante" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CD1ECB41A4320A00033B502;
+			productRefGroup = 0CD1ECBE1A4320A00033B502 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CD1ECBC1A4320A00033B502 /* Guante */,
+				0CD1ECCC1A4320A00033B502 /* GuanteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CD1ECBB1A4320A00033B502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD1ECC51A4320A00033B502 /* Images.xcassets in Resources */,
+				0CD1ECC81A4320A00033B502 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CD1ECCB1A4320A00033B502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CD1ECB91A4320A00033B502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD1ECC31A4320A00033B502 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CD1ECC91A4320A00033B502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD1ECD41A4320A00033B502 /* GuanteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CD1ECCF1A4320A00033B502 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CD1ECBC1A4320A00033B502 /* Guante */;
+			targetProxy = 0CD1ECCE1A4320A00033B502 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0CD1ECC61A4320A00033B502 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CD1ECC71A4320A00033B502 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CD1ECD51A4320A00033B502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CD1ECD61A4320A00033B502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0CD1ECD81A4320A00033B502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Guante/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0CD1ECD91A4320A00033B502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Guante/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0CD1ECDB1A4320A00033B502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GuanteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guante.app/Contents/MacOS/Guante";
+			};
+			name = Debug;
+		};
+		0CD1ECDC1A4320A00033B502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GuanteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guante.app/Contents/MacOS/Guante";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CD1ECB81A4320A00033B502 /* Build configuration list for PBXProject "Guante" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CD1ECD51A4320A00033B502 /* Debug */,
+				0CD1ECD61A4320A00033B502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CD1ECD71A4320A00033B502 /* Build configuration list for PBXNativeTarget "Guante" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CD1ECD81A4320A00033B502 /* Debug */,
+				0CD1ECD91A4320A00033B502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0CD1ECDA1A4320A00033B502 /* Build configuration list for PBXNativeTarget "GuanteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CD1ECDB1A4320A00033B502 /* Debug */,
+				0CD1ECDC1A4320A00033B502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CD1ECB51A4320A00033B502 /* Project object */;
+}
