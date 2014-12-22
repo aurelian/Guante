@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var startedAt : NSDate? = nil
     var currentImage : NSImage? = nil
     
-    var seconds : NSTimeInterval = 59*60
+    var seconds : NSTimeInterval = 60*60
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
@@ -44,7 +44,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             userInfo: nil,
             repeats: true)
         
-        dateFormatter.dateFormat = "mm:ss"
+        dateFormat()
+        
+        dateFormatter.timeZone = NSTimeZone(abbreviation: "GMT")
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -57,9 +59,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBAction func toggleTimer(sender: AnyObject) {
         if let started = startedAt {
+            // stops the watch
             startedAt = nil
         } else {
             startedAt = NSDate()
+            dateFormat()
         }
     }
     
@@ -71,24 +75,36 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         var interval : NSTimeInterval = 0
         
         if let started = startedAt {
-            interval = NSDate().timeIntervalSinceDate(started);
+            interval = NSDate().timeIntervalSinceDate(started)
             if interval > seconds {
-                NSLog("Time is up!!!")
+                NSLog("--> time is up!!!")
                 startedAt = nil
                 interval = 0
-                currentImage = wImage
             }
         } else {
-            if currentImage == wImage {
-                currentImage = bImage
-            } else {
-                currentImage = wImage
-            }
+            blinkImage()
         }
-        let text = dateFormatter.stringFromDate(NSDate(timeIntervalSince1970: seconds - interval))
-        statusItem.button?.title = text
         
+        let date:NSDate = NSDate(timeIntervalSince1970: seconds - interval)
+        
+        let text = dateFormatter.stringFromDate(date)
+        statusItem.button?.title = text
+    }
+    
+    func blinkImage() {
+        if currentImage == wImage {
+            currentImage = bImage
+        } else {
+            currentImage = wImage
+        }
         statusItem.button?.image = currentImage
-
+    }
+    
+    func dateFormat() {
+        if seconds >= 60*60 {
+            dateFormatter.dateFormat = "HH:mm:ss"
+        } else {
+            dateFormatter.dateFormat = "mm:ss"
+        }
     }
 }
