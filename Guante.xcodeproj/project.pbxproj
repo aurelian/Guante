@@ -393,6 +393,7 @@
 				0CD1ECD91A4320A00033B502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CD1ECDA1A4320A00033B502 /* Build configuration list for PBXNativeTarget "GuanteTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +402,7 @@
 				0CD1ECDC1A4320A00033B502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

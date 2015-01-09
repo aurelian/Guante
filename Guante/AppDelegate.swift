@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var startedAt : NSDate? = nil
     var currentImage : NSImage? = nil
     
-    var seconds : NSTimeInterval = 60*60
+    var seconds : NSTimeInterval = 60*55
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
@@ -47,6 +47,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         dateFormat()
         
         dateFormatter.timeZone = NSTimeZone(abbreviation: "GMT")
+        
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -78,6 +79,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             interval = NSDate().timeIntervalSinceDate(started)
             if interval > seconds {
                 NSLog("--> time is up!!!")
+                sendNotification()
                 startedAt = nil
                 interval = 0
             }
@@ -107,4 +109,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             dateFormatter.dateFormat = "mm:ss"
         }
     }
+    
+    func sendNotification() {
+        let userNotification:NSUserNotification = NSUserNotification()
+        userNotification.title = "TIME IS UP"
+        userNotification.subtitle = "Do something else"
+        userNotification.contentImage = NSImage(named: "guante");
+        userNotification.soundName = NSUserNotificationDefaultSoundName;
+        
+        NSUserNotificationCenter.defaultUserNotificationCenter().scheduleNotification(userNotification)
+    }
+    
 }
