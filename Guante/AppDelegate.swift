@@ -27,8 +27,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
-        wImage.setTemplate(true)
-        bImage.setTemplate(true)
         
         currentImage = wImage
         
@@ -48,8 +46,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         dateFormatter.timeZone = NSTimeZone(abbreviation: "GMT")
         
+        NSWorkspace.sharedWorkspace().notificationCenter.addObserver(
+                self,
+                selector: "onSwitchApp",
+                name: NSWorkspaceDidActivateApplicationNotification,
+                object: nil
+        )
+    
     }
 
+    func onSwitchApp() {
+        if(startedAt != nil) {
+            NSLog("--> current app: %@", (NSWorkspace.sharedWorkspace().frontmostApplication?.bundleIdentifier)!)
+        }
+    }
+    
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
@@ -59,7 +70,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func toggleTimer(sender: AnyObject) {
-        if let started = startedAt {
+        if (startedAt != nil) {
             // stops the watch
             startedAt = nil
         } else {
@@ -76,13 +87,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         var interval : NSTimeInterval = 0
         
         if let started = startedAt {
+            // timer is running.
             interval = NSDate().timeIntervalSinceDate(started)
+            
             if interval > seconds {
                 NSLog("--> time is up!!!")
                 sendNotification()
                 startedAt = nil
                 interval = 0
             }
+            
         } else {
             blinkImage()
         }
@@ -91,6 +105,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let text = dateFormatter.stringFromDate(date)
         statusItem.button?.title = text
+        
     }
     
     func blinkImage() {
