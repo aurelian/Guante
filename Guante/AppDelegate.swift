@@ -13,7 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var statusMenu: NSMenu!
 
-    let statusItem : NSStatusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
+    let statusItem : NSStatusItem = NSStatusBar.systemStatusBar().statusItemWithLength(64.0)
     let dateFormatter : NSDateFormatter = NSDateFormatter()
     
     let wImage : NSImage = NSImage(named: "mitten-w")!
