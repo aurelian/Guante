@@ -15,6 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     let statusItem : NSStatusItem = NSStatusBar.systemStatusBar().statusItemWithLength(64.0)
     let dateFormatter : NSDateFormatter = NSDateFormatter()
+    let workspace : NSWorkspace = NSWorkspace.sharedWorkspace()
     
     let wImage : NSImage = NSImage(named: "mitten-w")!
     let bImage : NSImage = NSImage(named: "mitten-b")!
@@ -22,6 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var timer : NSTimer? = nil
     var startedAt : NSDate? = nil
     var currentImage : NSImage? = nil
+    var currentApp : NSRunningApplication? = nil
     
     var seconds : NSTimeInterval = 60*55
     
@@ -46,7 +48,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         dateFormatter.timeZone = NSTimeZone(abbreviation: "GMT")
         
-        NSWorkspace.sharedWorkspace().notificationCenter.addObserver(
+        workspace.notificationCenter.addObserver(
                 self,
                 selector: "onSwitchApp",
                 name: NSWorkspaceDidActivateApplicationNotification,
@@ -57,7 +59,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func onSwitchApp() {
         if(startedAt != nil) {
-            NSLog("--> current app: %@", (NSWorkspace.sharedWorkspace().frontmostApplication?.bundleIdentifier)!)
+            currentApp = workspace.frontmostApplication
+            if(currentApp != nil) {
+                NSLog("--> current app: %@", currentApp!.bundleIdentifier!)
+            }
         }
     }
     
